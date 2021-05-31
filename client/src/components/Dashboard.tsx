@@ -3,6 +3,8 @@ import './Dashboard.css';
 import { getRepos } from '../service/apiService';
 import { Repo } from '../interfaces/Repo';
 
+import RepoItem from './RepoItem';
+
 function Dashboard() {
   const [ repos, setRepos ] = useState<Repo[]>([]);
 
@@ -12,10 +14,13 @@ function Dashboard() {
       setRepos(prev => repos);
     })();
   }, []);
+  console.log('repos', repos)
 
   return (
-    <div>
-
+    <div className="dashboard-container">
+      <div>Repositories {repos.length}</div>
+      <input type="text" />
+      {repos.map((repo) => <RepoItem key={repo.updatedAt} repo={repo}/>)}
     </div>
   );
 };
