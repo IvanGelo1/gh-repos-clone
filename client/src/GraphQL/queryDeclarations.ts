@@ -42,4 +42,4 @@ const query_user = {
  `
 };
 
-export { query_repos }
+export { query_repos, query_user }
