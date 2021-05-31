@@ -36,7 +36,8 @@ const query_user = {
         following {
           totalCount
         },
-        location
+        location,
+        avatarUrl
       }
     }
  `
