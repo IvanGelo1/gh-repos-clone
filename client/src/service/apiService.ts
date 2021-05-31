@@ -9,7 +9,7 @@ const headers = {
 
 async function getUser(): Promise<User> {
   try {
-    const rawData = await fetch(`${process.env.REACT_APP_BASE_URL}`, {
+    const rawData = await fetch('https://api.github.com/graphql', {
       method: 'POST',
       headers: headers,
       body: JSON.stringify(query_user),
@@ -23,13 +23,13 @@ async function getUser(): Promise<User> {
 
 async function getRepos(): Promise<Repo[]> {
   try {
-    const rawData = await fetch(`${process.env.REACT_APP_BASE_URL}`, {
+    const rawData = await fetch('https://api.github.com/graphql', {
       method: 'POST',
       headers: headers,
       body: JSON.stringify(query_repos),
     });
     const parsedData = JSON.parse(await rawData.text());
-    return parsedData.data.user.repositories;
+    return parsedData.data.user.repositories.nodes;
   } catch (err) {
     throw new Error(err);
   }
