@@ -1,0 +1,27 @@
+.usercard-container {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.user-name {
+  font-weight: 900;
+  font-size: larger;
+}
+
+@media screen and (max-width:480px) {
+  .usercard-container {
+    background-color: #30363d;
+    color: white;
+    height: 40vh;
+  }
+  .user-img {
+    height: 18vh;
+    width: 18vh;
+  }
+}

@@ -14,7 +14,6 @@ function Dashboard() {
       setRepos(prev => repos);
     })();
   }, []);
-  console.log('repos', repos)
 
   return (
     <div className="dashboard-container">

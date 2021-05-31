@@ -15,11 +15,12 @@ function UserCard() {
 
   return (
     <div className="usercard-container">
-      <img src={user.avatarUrl} alt="User profile" />
+      <img className="user-img" src={user.avatarUrl} alt="User profile" />
       <div className="usecard-title">
-        <div>{user.name}</div>
+        <div className="user-name">{user.name}</div>
         <div>{user.login}</div>
       </div>
+      <div>{user.bio}</div>
       <div className="usercard-follow">
         <div>{user.followers.totalCount} followers</div>
         <div>{user.following.totalCount} following</div>
