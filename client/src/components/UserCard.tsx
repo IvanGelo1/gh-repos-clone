@@ -26,7 +26,7 @@ function UserCard() {
           <div className="usercard-followers">{user.followers.totalCount} followers</div>
           <div>{user.following.totalCount} following</div>
         </div>
-        <div>{user.location}</div>
+        <div className="usercard-location">{user.location}</div>
       </div>
     </div>
   )

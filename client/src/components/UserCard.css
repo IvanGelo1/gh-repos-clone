@@ -52,6 +52,9 @@
   .usercard-followers {
     padding-right: 10px;
   }
+  .usercard-location {
+    color: #24292e;
+  }
 }
 
 @media screen and (max-width:769px) {
@@ -73,6 +76,9 @@
     padding-bottom: 0px;
   }
   .usercard-bio {
+    color: white;
+  }
+  .usercard-location {
     color: white;
   }
 }
