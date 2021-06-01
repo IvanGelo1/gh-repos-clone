@@ -24,13 +24,13 @@ To get your own Personal Access Token:
   5. Click on ```Generate new token```
   6. Use the generated token in your .env file
   
-###To run the app:
+To run the app:
 From the client folder run:
   ```
   npm run start
   ```
   
-###To run the test suite:
+To run the test suite:
 From client folder run:
   ```
   npm run test
