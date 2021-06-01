@@ -40,7 +40,7 @@ From client folder run:
  Since this was quite a short project, in the future I would like to dedicate more time to overall styling of the app, also add more functionality and become more familiar with the Github GraphQL API.
 Other than that, I will focus more time towards the testing, to make the app more robust.
 
-#Feedback
+Feedback
 
 I think it was really interesting using the GraphQL API, by the higher usage of the query language, I am starting to see more benefits about the usefulness of GraphQL, and considering it for future projects:
 
