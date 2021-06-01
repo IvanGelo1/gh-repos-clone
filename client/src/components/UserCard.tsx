@@ -14,7 +14,7 @@ function UserCard() {
   }, []);
 
   return (
-    <div className="usercard-container">
+    <div className="usercard-container" data-testid="usercard">
       <img className="user-img" src={user.avatarUrl} alt="User profile" />
       <div className="usercard-content">
         <div className="usercard-title">

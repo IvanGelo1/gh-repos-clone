@@ -18,7 +18,6 @@ function Dashboard() {
     })();
   }, []);
 
-  console.log('query here', query);
   useEffect(() => {
     if (!query.length) setDisplayedRepos(prev => repos);
     else {
@@ -31,7 +30,7 @@ function Dashboard() {
   }, [query]);
 
   return (
-    <div className="dashboard-container">
+    <div className="dashboard-container" data-testid="dashboard">
       <div className="repositories-length">Repositories {repos.length}</div>
       <div className="dashboard-input">
         <input value={query} onChange={e => setQuery(e.target.value)} className="text-input" type="text" placeholder="Find a repository..." />
