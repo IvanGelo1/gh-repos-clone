@@ -16,16 +16,18 @@ function UserCard() {
   return (
     <div className="usercard-container">
       <img className="user-img" src={user.avatarUrl} alt="User profile" />
-      <div className="usecard-title">
-        <div className="user-name">{user.name}</div>
-        <div>{user.login}</div>
+      <div className="usercard-content">
+        <div className="usercard-title">
+          <div className="user-name">{user.name}</div>
+          <div className="usercard-login">{user.login}</div>
+        </div>
+        <div className="usercard-bio">{user.bio}</div>
+        <div className="usercard-follow">
+          <div className="usercard-followers">{user.followers.totalCount} followers</div>
+          <div>{user.following.totalCount} following</div>
+        </div>
+        <div>{user.location}</div>
       </div>
-      <div>{user.bio}</div>
-      <div className="usercard-follow">
-        <div>{user.followers.totalCount} followers</div>
-        <div>{user.following.totalCount} following</div>
-      </div>
-      <div>{user.location}</div>
     </div>
   )
 };

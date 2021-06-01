@@ -1,27 +1,78 @@
 .usercard-container {
-  background-color: aqua;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
+
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
+.usercard-content {
+  padding-left: 30px;
+}
+
 .user-name {
-  font-weight: 900;
-  font-size: larger;
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+@media screen and (max-width:3000px) {
+  .usercard-container {
+    width: 25%;
+    padding-top: 32px;
+  }
+  .user-img {
+    height: 18vw;
+    width: 18vw;
+  }
+  .usercard-content {
+    padding-top: 30px;
+  }
+  .usercard-title {
+    padding-bottom: 15px;
+  }
+  .usercard-login {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .usercard-follow {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+  }
+  .usercard-bio {
+    font-size: 17px;
+    color: #24292e;
+    padding-bottom: 15px;
+  }
+  .usercard-followers {
+    padding-right: 10px;
+  }
 }
 
 @media screen and (max-width:769px) {
   .usercard-container {
+    justify-content: space-evenly;
     background-color: #30363d;
     color: white;
     height: 40vh;
+    width: 100%
   }
   .user-img {
     height: 18vh;
     width: 18vh;
+  }
+  .usercard-content {
+    padding-top: 0px;
+  }
+  .usercard-title {
+    padding-bottom: 0px;
+  }
+  .usercard-bio {
+    color: white;
   }
 }

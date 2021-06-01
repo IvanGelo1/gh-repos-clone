@@ -21,9 +21,16 @@
   margin-bottom: 40px;
 }
 
+@media screen and (max-width:3000px) {
+  .dashboard-container {
+    width: 75%;
+  }
+}
+
 @media screen and (max-width:769px) {
   .dashboard-container {
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(247, 247, 247);
+    width: 100%;
   }
   .repositories-length {
     padding-top: 20px;
