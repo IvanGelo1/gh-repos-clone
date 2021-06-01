@@ -17,12 +17,12 @@ Setup the [environment variables](https://medium.com/chingu/an-introduction-to-e
 1. Inside the client folder create a `.env` file. See `client-example-env.txt` for reference
 
 To get your own Personal Access Token:
-1.Go to your Github profile
-2.Go to settings
-3. Click on ```Developer settings```
-4. Click on ```Personal access tokens```
-5. Click on ```Generate new token```
-6. Use the generated token in your .env file
+  1. Go to your Github profile
+  2. Go to settings
+  3. Click on ```Developer settings```
+  4. Click on ```Personal access tokens```
+  5. Click on ```Generate new token```
+  6. Use the generated token in your .env file
   
 To run the app:
 1. From the client folder run:
