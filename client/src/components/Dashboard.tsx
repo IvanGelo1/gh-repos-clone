@@ -18,7 +18,12 @@ function Dashboard() {
   return (
     <div className="dashboard-container">
       <div className="repositories-length">Repositories {repos.length}</div>
-      <input className="text-input" type="text" placeholder="Find a repository..." />
+      <div className="dashboard-input">
+        <input className="text-input" type="text" placeholder="Find a repository..." />
+      <button className="btn-new-repo">
+        New
+      </button>
+      </div>
       {repos.map((repo) => <RepoItem key={repo.updatedAt} repo={repo}/>)}
     </div>
   );
