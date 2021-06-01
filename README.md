@@ -7,7 +7,7 @@ This has been a short project, with the goal of getting familiar with the GitHub
   ```
   git clone https://github.com/IvanGelo1/gh-repos-clone.git
   ```
-2. After cloning the repository, from both client and server folders, run the following command:
+2. After cloning the repository, navigate to the client folder and run the following command:
 ```
 npm install
 ```
